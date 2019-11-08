@@ -1,0 +1,65 @@
+<html>
+   <div id="balloon" style="background-color: red;">
+       <script>
+
+       var p = document.getElementById("balloon");
+       p.onclick = click;
+       p.onmouseleave = mouse_leave;
+
+       function mouse_leave()
+       {
+            var width = p.offsetWidth;
+           var height = p.offsetHeight;
+           width -= 5;
+           height -= 5;
+           if (width < 200 && height < 200)
+           {
+               width = 200;
+               height = 200;
+           }
+           p.style.width = width;
+           p.style.height = height;
+           if (p.style.backgroundColor == 'red')
+                 p.style.backgroundColor = 'green';
+           else if (p.style.backgroundColor == 'blue')
+                p.style.backgroundColor = 'red';
+            else if (p.style.backgroundColor == 'green')
+                p.style.backgroundColor = 'blue';
+
+
+
+       }
+       function click()
+       {
+           var width = p.offsetWidth;
+           var height = p.offsetHeight;
+           width += 10;
+           height += 10;
+           if (width > 420 && height > 420)
+           {
+               width = 200;
+               height = 200;
+           }
+           p.style.width = width;
+           p.style.height = height;
+           if (p.style.backgroundColor == 'red')
+                 p.style.backgroundColor = 'blue';
+           else if (p.style.backgroundColor == 'blue')
+                p.style.backgroundColor = 'green';
+            else if (p.style.backgroundColor == 'green')
+                p.style.backgroundColor = 'red';
+
+       }
+
+
+       </script>
+   </div>
+</html>
+
+<style>
+#balloon{
+    width:200px;
+    height:200px;
+    margin: 10% auto;
+    border-radius:50%;}
+</style>

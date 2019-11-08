@@ -1,0 +1,106 @@
+html {background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMbi_0Z8f2ajuhK0JEzGQG7wpF9pAoPzftUbNWMRAsugJprS8v");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+div {
+    text-align: center;
+}
+
+th, td {
+    text-align: center;
+    border: 1px solid black;
+    position: relative;
+}
+
+.wo_border_1 {
+    empty-cells:hide;
+    border: none;
+    width: 1500px
+}
+
+.wo_border_2 {
+    empty-cells:hide;
+    border: none;
+    width: 1000px
+}
+
+.wo_border_3 {
+    empty-cells:hide;
+    border: none;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+    font-size: 1.665vw;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.665vw;
+}
+
+td {
+    width: 1%;
+    height: 1%;
+}
+
+p {
+    margin:1px;
+    font-size: 1vw;
+}
+
+p.masse {
+    text-align:right;
+}
+
+p.na {
+    text-align:left;
+}
+
+.noble_gas {
+    background-color: aqua;
+}
+
+.alkali {
+    background-color: orangered;
+}
+
+.metalloid {
+    background-color: brown;
+}
+
+.actinide {
+    background-color: purple;
+}
+
+.lanthanide {
+    background-color: #C99BF9;
+}
+
+.tm {
+    background-color: pink;
+}
+
+.non_metal {
+    background-color: lightgreen;
+}
+
+.earthmetal {
+    background-color: #CBD3B3
+}
+
+.halogen {
+    background-color: yellow;
+}
+
+.ptm {
+    background-color: #B9B5BE
+}
+
+.other {
+    background-color: grey;
+}

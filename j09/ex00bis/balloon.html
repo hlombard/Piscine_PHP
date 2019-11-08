@@ -1,0 +1,72 @@
+<html>
+   <div id="balloon">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   </div>
+   <script>
+	   $(document).ready(function()
+		{
+			$('#balloon').click(function()
+			{
+				var width = $('#balloon').width();
+				var height = $('#balloon').height();
+				var color = $('#balloon').css( "background-color");
+
+				width += 10;
+				height += 10;
+
+				if (width > 420 && height > 420)
+          		{
+               		width = 200;
+              		height = 200;
+           		}
+				$('#balloon').height(height);
+				$('#balloon').width(width);
+
+				if (color == 'rgb(255, 0, 0)')
+					$('#balloon').css( "background-color", "green" );
+				else if (color == 'rgb(0, 128, 0)')
+					$('#balloon').css( "background-color", "blue" );
+				else if (color == 'rgb(0, 0, 255)')
+					$('#balloon').css( "background-color", "red" );
+			}
+			)
+
+			$('#balloon').mouseleave(function()
+			{
+				var width = $('#balloon').width();
+				var height = $('#balloon').height();
+				var color = $('#balloon').css( "background-color");
+
+				width -= 5;
+           		height -= 5;
+
+				if (width < 200 && height < 200)
+           		{
+               		width = 200;
+               		height = 200;
+           		}
+
+				$('#balloon').height(height);
+				$('#balloon').width(width);
+
+				if (color == 'rgb(255, 0, 0)')
+					$('#balloon').css( "background-color", "blue" );
+				else if (color == 'rgb(0, 128, 0)')
+					$('#balloon').css( "background-color", "red" );
+				else if (color == 'rgb(0, 0, 255)')
+					$('#balloon').css( "background-color", "green" );
+			}
+			)
+		}
+	   )
+
+   </script>
+</html>
+
+<style>
+#balloon{background-color: red;
+    width:200px;
+    height:200px;
+    margin: 10% auto;
+    border-radius:50%;}
+</style>

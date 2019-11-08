@@ -1,0 +1,18 @@
+body {
+margin: 10px;
+}
+
+.g-recaptcha{
+margin-top: 5px;
+}
+.homepage{
+	height: 30px;
+	width: 80px;
+	margin :20px;
+	background-color: blue;
+	color: white; 
+	float: right;
+}
+.OK {
+	margin-top: 5px;
+}

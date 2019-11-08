@@ -1,0 +1,32 @@
+<- Vertex ----------------------------------------------------------------------
+The Vertex class handles vertices.
+
+An instance can be contructed from 3 vertices stored in an array : x,y and z;
+new Vertex( array( 'x' => 1.0, 'y' => 2.0, 'z' => 3.0 ) );
+
+It is also possible to add a 4th vertices w (default value is 1.0 if not set);
+new Vertex( array( 'x' => 1.0, 'y' => 2.0, 'z' => 3.0, 'z' => 2.0 ) );
+
+But also an instance of the Color Class, set with key 'color' in the array;
+new Vertex( array( 'x' => 1.0, 'y' => 2.0, 'z' => 3.0, 'color' => Color ) );
+
+The class provides the following methods :
+
+Getter:
+
+	Vertex   getX();
+	Vertex   getY();
+	Vertex   getZ();
+	Vertex   getW();
+	Vertex   getColor();
+
+Setters:
+
+	Vertex   setX($value);
+	Vertex   setY($value);
+	Vertex   setZ($value);
+	Vertex   setW($value);
+	Vertex   setColor(Color $value);
+
+
+---------------------------------------------------------------------- Vertex ->

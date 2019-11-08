@@ -1,0 +1,64 @@
+<html>
+    <body>
+        <input type="text" id="1"></input>
+        <select id="select">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+          </select>
+          <input type="text" id="2"></input>
+          <input type="submit" value = "Try me !" onclick="calc()"></input>
+          <script>
+				setInterval(function(){myFunction()}, 30000);
+			  function myFunction(){alert('Please, use me...');}
+              function calc()
+              {
+                var nb1 = document.getElementById("1").value;
+                var nb2 = document.getElementById("2").value;
+
+                var onlydigit1 = /^\d+$/.test(nb1);
+                var onlydigit2 = /^\d+$/.test(nb2);
+
+
+                nb1 = parseInt(nb1);
+                nb2 = parseInt(nb2);
+
+                var select = document.getElementById("select");
+                var op = select.options[select.selectedIndex].value;
+
+
+
+                if (nb1 < 0 || nb2 < 0 || !onlydigit1 || !onlydigit2)
+                {
+                    alert('Error :(');
+                }
+                else
+                {
+                    if (nb2 == 0 && (op == "/" || op == "%"))
+                    {
+                        console.log("It's over 9000!");
+                        alert("It's over 9000!");
+						
+                    }
+                    else
+                    {
+                        if (op == "+")
+                            result = nb1 + nb2;
+                        if (op == "-")
+                            result = nb1 - nb2;
+                        if (op == "*")
+                            result = nb1 * nb2;
+                        if (op == "/")
+                            result = nb1 / nb2;
+                        if (op == "%")
+                            result = nb1 % nb2;
+                        console.log(result);
+                        alert(result);
+                    }
+                }
+              }
+          </script>
+    </body>
+</html>

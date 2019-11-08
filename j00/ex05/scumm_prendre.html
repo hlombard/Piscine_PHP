@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>SCUMM</title>
+	<link rel="stylesheet" href="scumm.css">
+	<script>
+		function myFunction() {
+			document.getElementById("voir").innerHTML = "un petit robot semble \
+			tenir un livre bleu dans sa main";
+		}
+		function mytool() {
+			window.location.href = 'help.html';
+		}
+		function ft_avance() {
+			document.getElementById("avancer").innerHTML = "un petit robot \
+			vous barre la route";
+		}
+		function ft_prendre() {
+			document.getElementById("voir").innerHTML = "vous prenez de force \
+			le livre du petit robot";
+			window.location.href = 'scumm_2_livre.html';
+		}
+		function ft_parler() {
+			document.getElementById("to_talk").innerHTML = "Je suis marvin que \
+			puis-je faire pour vous";
+		}
+	</script>
+</head>
+
+<body>
+    <div id="header" class="content">
+        <img class="lef top" src="resources/day_of_the_42.png" title="doft" height="80%"/>
+        <a href="https://www.disney.com">
+            <img class="right top" src="resources/reload.png" title="Recommencer au début" height="20px"/>
+        </a>
+        <img class="loupe top" title="Loupe" src="resources/loupe.png" />
+        <a href="https://www.relaischateaux.com">
+            <img class="right bottom" src="resources/close.gif" title="Déconnecter" height="20px"/>
+        </a>
+    </div>
+
+    <div class="main">
+        <div id="left-column" class="content">
+            <img src="resources/arrow.png" title="Avancer" width="50%" />
+            <img class="oeil" src="resources/main.png" title="Prendre" width="50%"/> </a>
+            <a href="scumm_voir.html"> <img src="resources/oeil.png" title="Regarder" width="50%" /> </a>
+            <img src="resources/outil.png" title="Utiliser" width="50%" />
+            <img src="resources/chat-icon.png" title="Parler" width="50%"/>
+        </div>
+
+        <div id="center" class="content">
+            <img src="resources/cluster01.jpg" title="cluster" width="98%" height="97%"/>
+        </div>
+
+        <div id="right-column" class="content">
+            <img src="resources/book.png" title="Livre" width="50%" />
+        </div>
+    </div>
+
+    <div id="gui" class="content">
+        <p>
+            Vous <span class="entrez">entrez</span> alors dans une grande piece remplie d'<span class="ordinateurs">ordinateurs</span>...
+            <br>
+            <em>- Bonjour, vous êtes nouveau ici ?<em>
+        </p>
+        <form action="" method="post">
+            <input type="text">
+            <button class="sub" type="submit">Repondre</button>
+        </form>
+    </div>
+</body>
+
+</html>

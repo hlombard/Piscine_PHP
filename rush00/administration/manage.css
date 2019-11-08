@@ -1,0 +1,42 @@
+.manage_users {
+	display: flex;
+	justify-content: center;
+	background-color: DodgerBlue;
+	height: 50%;
+  }
+.manage_users > div {
+	background-color: #f1f1f1;
+	width: 25%;
+	margin: 10px;
+	text-align: center;
+}
+.manage_users > div p {font-size: 15px;}
+
+.manage_orders {
+	display: flex;
+	justify-content: center;
+	background-color: DodgerBlue;
+	height: 50%;
+  }
+.manage_orders > div {
+	background-color: #f1f1f1;
+	width: 25%;
+	margin: 10px;
+	text-align: center;
+}
+.manage_orders > div p {font-size: 15px;}
+
+.manage_categories {
+	display: flex;
+	justify-content: center;
+	background-color: DodgerBlue;
+	height: 50%;
+  }
+.manage_categories > div {
+	background-color: #f1f1f1;
+	width: 25%;
+	margin: 10px;
+	text-align: center;
+}
+.manage_categories > div p {font-size: 15px;}
+

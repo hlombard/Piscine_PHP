@@ -1,0 +1,55 @@
+<html>
+    <body>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <input type="text" id="1"></input>
+        <select id="select">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+          </select>
+          <input type="text" id="2"></input>
+          <input id="calc" type="submit" value = "Try me !"></input>
+          <script>
+             $(document).ready(function()
+             {
+				setInterval(function(){myFunction()}, 30000);
+			  function myFunction(){alert('Please, use me...');}
+                $('#calc').click(function()
+                {
+                    var nb1 = $('#1').val();
+                    var nb2 = $('#2').val();
+                    if (nb1 < 0 || nb2 < 0 || !nb1.match(/^\d+$/) || !nb2.match(/^\d+$/))
+                    {
+                      alert('Error :(');
+                    }
+                    else
+                    {
+                        var op = $( "#select" ).val();
+                        if (nb2 == 0 && (op == "/" || op == "%"))
+                        {
+                            console.log("It's over 9000!");
+                           alert("It's over 9000!");
+                        }
+                        else
+                        {
+                          if (op == "+")
+                            result = parseInt(nb1) + parseInt(nb2);
+                          if (op == "-")
+                            result = nb1 - nb2;
+                         if (op == "*")
+                            result = nb1 * nb2;
+                          if (op == "/")
+                            result = nb1 / nb2;
+                          if (op == "%")
+                            result = nb1 % nb2;
+                          console.log(result);
+                          alert(result);
+                        }
+                    }
+                })
+             })
+          </script>
+    </body>
+</html>
